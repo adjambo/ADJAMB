@@ -1,5 +1,5 @@
-def crypt(message):
+def crypt(message, pas=1):
     result = ""
     for char in message:
-        result += chr(ord(char) + 1)  # Ne prend pas encore en compte "pas"
+        result += chr(ord(char) + pas ) 
     return result
