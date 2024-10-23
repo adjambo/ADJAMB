@@ -1,2 +1,5 @@
 def crypt(message):
-    return ""  # Retourne une chaîne vide pour forcer l'échec du test
+    result = ""
+    for char in message:
+        result += chr(ord(char) + 1)
+    return result
